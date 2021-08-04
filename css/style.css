@@ -1,0 +1,1008 @@
+@import "grid.css";
+
+:root {
+    --white: #fff;
+    --liteGray: #F2F2F2;
+    --gray: #666;
+    --darkGray: #333333;
+    --green: #1B9930;
+    --red: #E74B54;
+    --black: #151513;
+    --cyan: #A8E8F9;
+    --yellow: #D6F12D;
+    --blue: #557FEB;
+    --darkBlue: #2150C9;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: var(--darkgray);
+    background-color: var(--white);
+}
+
+/* Colors */
+
+.text-white {
+    color: var(--white);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.bgr-white {
+    background-color: var(--white);
+}
+
+.bgr-liteGray {
+    background-color: var(--liteGray);
+}
+
+.bgr-darkGray {
+    background-color: var(--darkGray);
+}
+
+.bgr-red {
+    background-color: var(--red);
+}
+
+.bgr-black {
+    background-color: black;
+}
+
+.overlay-gray {
+    background-color: rgba(0, 9, 31, 0.15);
+}
+
+.overlay-black {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Text */
+
+.line {
+    border: none;
+    height: 2px;
+    background-color: var(--liteGray);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.small-text {
+    font-size: 90%;
+}
+
+/* Images */
+.crop {
+    clip-path: inset(0px 50px);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Icons */
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.smallIconCheck {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 9px;
+    right: 10px;
+}
+
+.smallIconCircle {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}
+
+/* Layout */
+
+/* header */
+
+#solidArrow {
+    height: 20px;
+    width: 20px;
+    margin-top: -12px;
+    margin-left: 150px;
+}
+
+#Home {
+    height: 7%;
+}
+
+.delivery h3 {
+    padding-bottom: 4px;
+    font-weight: 200;
+    line-height: 2;
+    text-align: center;
+}
+
+input {
+    text-align: left;
+    width: 100px;
+    font-size: 100%;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--gray);
+}
+
+::placeholder {
+    text-align: left;
+}
+
+.search-container button {
+    background-color: var(--white);
+    padding: 0;
+    border: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button img {
+    height: 20px;
+    width: 20px;
+}
+
+.blueBanner {
+    height: 110px;
+    width: 100%;
+    background-image: url(../photos/blue-banner.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -27px;
+    position: relative;
+}
+
+.blueBanner h5 {
+    padding: 15px;
+}
+
+.blueBanner h3 {
+    font-weight: 400;
+    width: 20%;
+    background-color: var(--darkGray);
+    margin-top: -28px;
+    padding: 5px;
+    margin-left: 40%;
+}
+
+.top {
+    width: auto;
+    height: 190px;
+    background-image: url(../images/lamps.svg);
+    background-repeat: repeat-x;
+}
+
+.site-branding {
+    top: auto;
+    margin-bottom: auto;
+    font-size: 250%;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+/* Menu */
+.menu,
+.menu-categories {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.menu ul,
+.menu-categories ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu ul li,
+.menu-categories ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 12px;
+    font-size: 120%;
+    text-decoration: none;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.menu ul li a:hover {
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.menu ul li a.current {
+    font-weight: 900;
+}
+
+.iconBl {
+    display: none;
+}
+
+.menu-categories ul li a {
+    display: block;
+    padding: 8px;
+    color: var(--gray);
+    text-decoration: none;
+    -webkit-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.menu-categories ul li a:hover {
+    font-weight: bolder;
+    color: var(--darkGray);
+}
+
+#sale {
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.menu-language {
+    height: 50px;
+}
+
+.nocurrent {
+    display: none;
+}
+
+.menu-language ul {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 1.1em;
+    top: 12px;
+    width: auto;
+    right: 33.5%;
+    margin: 0;
+    background-color: var(--darkGray);
+    z-index: 150;
+}
+
+.menu-language ul li {
+    float: none;
+    display: block;
+}
+
+
+.menu-language ul li a {
+    padding: 0;
+    line-height: 2;
+    text-align: center;
+    float: left;
+    letter-spacing: 2;
+}
+
+button img {
+    width: 12px;
+    height: 12px;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--darkGray);
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-nav {
+    display: none;
+}
+
+/* end header */
+
+/* banner with 100% height */
+
+.banner100 {
+    height: calc(100% - 200px);
+    background-image: url(../photos/Urban_comfort.png);
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner100 button,
+.banner1-3 button {
+    width: auto;
+    border: none;
+    background-color: var(--white);
+    border-radius: 2px;
+    color: var(--gray);
+}
+
+.banner1-3 button {
+    width: auto;
+    color: var(--darkGray);
+    border: var(--gray) 1px solid;
+}
+
+.banner100 button:hover,
+.banner1-3 button:hover {
+    background-color: var(--cyan);
+    color: var(--darkGray);
+    font-weight: 600;
+}
+
+.banner100 h1 {
+    letter-spacing: 0.3rem;
+}
+
+/* end banner with 100% height */
+
+/* banner with 6 elements */
+
+.bannerCategories a:hover {
+    color: var(--gray);
+    font-weight: 900;
+}
+
+#name {
+    font-weight: 500;
+    transform: translate(0%, -140%);
+}
+
+/* end banner with 6 elements */
+
+/* banner with 3 elements */
+.banner1-3 a {
+    color: var(--darkGray);
+    font-weight: 700;
+}
+
+.banner1-3 h5 {
+    text-transform: none;
+}
+
+.banner1-3 h1 {
+    font-size: 200%;
+    padding: 2px;
+}
+
+.banner1-3 a:hover {
+    color: var(--black);
+    font-weight: 900;
+}
+
+.flexFit {
+    width: 45%;
+    transform-origin: left;
+    transform: translate(0%, -104%) rotate(-90deg);
+}
+
+.flexFit:hover {
+    transform: translate(0%, -100%) rotate(360deg);
+    cursor: pointer;
+}
+
+.urbanStyle {
+    width: 80%;
+    transform: translate(12%, -110%);
+}
+
+.urbanStyle:hover {
+    transform: translate(12%, -1020%) rotate(360deg);
+    cursor: pointer;
+}
+
+.urbanStyleSecond {
+    width: 72%;
+    transform-origin: right;
+    transform: translate(27%, -101%) rotate(90deg);
+}
+
+.urbanStyleSecond:hover {
+    transform: translate(28.5%, -110%) rotate(360deg);
+    cursor: pointer;
+}
+
+#transform {
+    transform: translate(0%, -45%);
+}
+
+/* end banner with 3 elements */
+
+/* banner with 4 elements */
+.banner1-4 h4 {
+    transform: translate(0%, 100%);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.banner1-4 a {
+    color: var(--white);
+    font-size: 80%;
+}
+
+.banner1-4 a:hover {
+    font-weight: 900;
+    color: var(--darkGray);
+}
+
+.transform1-4 {
+    transform: translate(0%, -120%);
+}
+
+.transform1-4 h4 {
+    letter-spacing: 0.15em;
+}
+
+.transform1-4 button {
+    width: auto;
+    border-radius: 2px;
+}
+
+.transform1-4 button:hover {
+    background-color: var(--cyan);
+    color: var(--darkGray);
+    font-weight: 600;
+}
+
+/* end banner with 4 elements */
+
+/* Slider */
+
+.slick-dots {
+    transform: translate(0, -120px);
+}
+
+.newProducts {
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.newProducts span {
+    margin-left: 0.5%;
+}
+
+.item p {
+    width: 25%;
+    padding: 2px 1px;
+    margin: 10px;
+    transform: translate(191px, -350px);
+
+}
+
+@media(max-width:991px) {}
+
+.dot-without-banner,
+.dot-with-1-banner,
+.dot-with-2-banners {
+    height: 30px;
+    width: 30px;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 3px;
+    display: inline-block;
+}
+
+.dot-without-banner {
+    transform: translate(92px, -50px);
+}
+
+.dot-with-1-banner {
+    transform: translate(92px, -93px);
+}
+
+.dot-with-2-banners {
+    transform: translate(92px, -125px);
+}
+
+.text-2-banners {
+    transform: translate(0, -120px);
+}
+
+.text h4,
+.text-2-banners h4,
+.text-1-banner h4 {
+    color: var(--darkGray);
+    font-weight: 900;
+}
+
+.text h5,
+.text-2-banners h5,
+.text-1-banner h5 {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.item button img {
+    padding: 2px;
+}
+
+.price-2-banners hr,
+price-1-banner hr,
+price hr {
+    width: 30%;
+    height: 2px;
+    background-color: var(--gray);
+    transform: translate(-55px, 0);
+}
+
+.price-2-banners {
+    width: 60%;
+    transform: translate(75px, -20px);
+}
+
+.price-2-banners h5,
+.price h5,
+.price-1-banner h5 {
+    font-weight: 900;
+}
+
+.text {
+    transform: translate(0, -45px);
+}
+
+.price {
+    transform: translate(0, -20px);
+}
+
+.text-1-banner {
+    transform: translate(0, -90px);
+}
+
+.promo {
+    color: var(--red) !important;
+    transform: translate(-40px, 0);
+}
+
+.banner1-2 {
+    transform: translate(0, -100px);
+}
+
+/* end slider */
+
+/* banner with text */
+
+.bannerText {
+    transform: translate(0, -200px);
+}
+
+@media(max-width:991px) {}
+
+.bannerText a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.bannerText button {
+    width: 150px;
+    background-color: var(--white);
+    color: var(--darkGray);
+    border: none;
+    font-weight: 700;
+    font-size: 100%;
+    transform: translate(-20px, 0);
+}
+
+.bannerText h2 {
+    color: var(--darkGray);
+}
+
+#more {
+    display: none;
+}
+
+#more {
+    text-transform: none;
+}
+
+/* end banner with text */
+
+/* footer */
+
+.footer {
+    font-size: 90%;
+    transform: translate(0, -150px);
+}
+
+.footer h2 {
+    color: var(--darkGray);
+    letter-spacing: 0.1em;
+    text-shadow:
+        -1px 0 var(--darkGray), 0 1px var(--darkGray), 1px 0 var(--darkGray), 0 -1px var(--darkGray),
+        -1px -1px var(--darkGray), 1px 1px var(--darkGray), -1px 1px var(--darkGray), 1px -1px var(--darkGray);
+}
+
+.social {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.pay {
+    height: 30px;
+    width: 60px;
+}
+
+#cash {
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: none;
+    height: 40px;
+    width: 75px;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+}
+
+.link a {
+    margin: 5px 0;
+    color: var(--gray);
+}
+
+.link p {
+    font-size: 90%;
+}
+
+.link h4 {
+    color: var(--darkGray);
+}
+
+.link span {
+    color: var(--darkGray);
+}
+
+.link button {
+    background-color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border: 1px solid var(--gray);
+}
+
+.link button:hover {
+    background-color: var(--cyan);
+}
+
+#e-mail {
+    transform: translate(72px, -24px);
+    height: 15px;
+    width: 30px;
+}
+
+.see-more {
+    text-decoration: underline 1px;
+}
+
+.see-more img {
+    transform: translate(207px, -13px);
+    height: 10px;
+    width: 10px;
+}
+
+#logo {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* end footer */
+
+/* media queries */
+
+@media only screen and (max-width:991px) {
+
+    .menu,
+    .menu-categories {
+        height: 50px;
+    }
+
+    .menu ul.active,
+    .menu-categories ul.subactive {
+        display: none;
+    }
+
+    .menu ul,
+    .menu-categories ul {
+        position: absolute;
+        top: 45px;
+        width: 20%;
+        margin: 0;
+        background-color: rgba(120, 120, 120, 0.9);
+        z-index: 100;
+    }
+
+    .menu ul li,
+    .menu-categories ul li {
+        float: none;
+        display: block;
+    }
+
+    .menu ul li:active,
+    .menu ul li:hover,
+    .iconBl:active,
+    .iconBl:hover {
+        background-color: var(--cyan);
+        font-weight: 800;
+    }
+
+    .iconBl {
+        height: 15px;
+        width: 15px;
+        transform: rotate(-90deg);
+        float: right;
+        margin-top: 4px;
+        display: inline-block;
+    }
+
+    .menu-categories ul {
+        background-color: rgba(255, 255, 255, 0.9);
+        left: 23%;
+    }
+
+    .menu-categories ul li a:hover,
+    .menu-categories ul li:active {
+        background-color: var(--gray);
+        color: var(--cyan) !important;
+        font-weight: 800;
+    }
+
+    .toggle-nav {
+        display: inline-block;
+        font-size: 1.6rem;
+    }
+
+    .toggle-nav:hover {
+        transform: rotate(180deg);
+    }
+
+    #solidArrow,
+    .search-container {
+        display: none;
+    }
+
+    .white-line {
+        height: 0;
+    }
+
+    .delivery,
+    .blueBanner {
+        transform: translate(0, -20px);
+    }
+
+    .banner100 {
+        height: calc(100% - 50px);
+    }
+
+    .flexFit {
+        width: 50%;
+    }
+
+    .price-2-banners hr,
+    price-1-banner hr,
+    price hr {
+        transform: translate(-75px, 0);
+    }
+
+    .item p {
+        transform: translate(0, -1900%);
+    }
+
+    .bannerText {
+        transform: translate(0, 0);
+        margin-top: -90px;
+    }
+
+    .footer {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .nocurrent {
+        display: block;
+    }
+    
+    menu-language {
+        height: auto;
+    }
+
+    .menu-language ul.langactive {
+        display: none;
+    }
+
+    .menu-language ul {
+        position: absolute;
+        top: 35px;
+        width: auto;
+        right: 47%;
+        margin: 0;
+        background-color: rgba(60, 60, 60, 0.9);
+        z-index: 150;
+    }
+
+    .menu-language ul li {
+        float: none;
+        display: block;
+    }
+
+    .menu-language ul li:active,
+    .menu-language ul li:hover {
+        background-color: var(--cyan);
+        font-weight: 800;
+    }
+}
+@media only screen and (max-width:767px) {
+    
+
+    #line {
+        display: none;
+    }
+
+
+
+    #fashion {
+        padding-top: 5px;
+        font-size: 70% !important;
+    }
+
+    .menu ul {
+        width: 130px;
+    }
+
+    .menu-categories ul {
+        width: 130px;
+        left: 130px;
+    }
+
+    .blueBanner h3 {
+        width: 150px;
+        margin-left: 32%;
+    }
+
+    .dot-without-banner {
+        transform: translate(152px, -50px);
+    }
+
+    .dot-with-1-banner {
+        transform: translate(152px, -93px);
+    }
+
+    .dot-with-2-banners {
+        transform: translate(152px, -125px);
+    }
+
+    .price-2-banners hr,
+    price-1-banner hr,
+    price hr {
+        transform: translate(-105px, 0);
+        width: 25%;
+    }
+
+    .arrow-icon {
+        margin: 2px;
+    }
+
+    .promo {
+        transform: translate(-80px, 0);
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .site-branding {
+        margin-top: 0;
+        display: inline;
+    }
+
+    #Home {
+        padding-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .menu ul {
+        top: 90px;
+    }
+
+    .menu-categories ul {
+        top: 90px;
+    }
+
+    .menu-language ul {
+        top: 135px;
+        left: 0;
+        width: 25%;
+    }
+}
+
+
+/* Effects */
+.letterSpace {
+    letter-spacing: 0.07em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.boldText {
+    text-shadow:
+        -1px 0 var(--white), 0 1px var(--white), 1px 0 var(--white), 0 -1px var(--white),
+        -1px -1px var(--white), 1px 1px var(--white), -1px 1px var(--white), 1px -1px var(--white);
+}
+
+.zoom {
+    -webkit-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.07, 1.07);
+    -webkit-transform: scale(1.07, 1.07);
+    transform: scale(1.07, 1.07);
+}
+
+
+/* Buttons */
+[class*="btn-"] {
+    padding: 0.4rem 1rem;
+    margin: 0.5rem 0;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}

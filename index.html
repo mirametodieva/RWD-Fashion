@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- START header -->
+    <div class="flex h-between bgr-darkGray " id="Home">   
+        <nav class="menu flex text-white uppercase col-lg-3 col-md-3">
+            <ul class="active">
+                <li><a class="current" href="#">Мъже<img src="photos/icons/arrow-down-sign-to-navigate.svg" class="iconBl"></a></li>
+                <li><a href="#">Жени<img src="photos/icons/arrow-down-sign-to-navigate.svg" class="iconBl"> </a></li>
+            </ul>
+        </nav>
+        <div class="site-branding flex v-center h-between col-lg-2 col-md-2 col-sm-5 col-xs-5 col-xxs-12 text-white"> 
+            <button class="toggle-nav" href><img src="photos/icons/menu.svg" class="icon"></button>
+            <a href="index.html" id="fashion" class="boldText uppercase">Fashion</a>
+        </div>
+        <div class="flex v-center col-lg-4 col-md-4 col-sm-6 col-xs-5 col-xss-12 pb-1">
+            <nav class="menu-language uppercase">
+                <ul class="langactive">
+                    <li><a  class="current-lang" href="#">bg &#8725; bgn</a></li>
+                    <li><a class="nocurrent" href="#">us &#8725; usd</a></li>
+                </ul>
+            </nav>
+            <div class="flex v-center col-lg-6 col-md-7 col-sm-7 col-xs-12 col-xxs-12">
+                <a><img src="photos/icons/arrow-down-sign-to-navigate.svg" class="arrow-icon" id="icon"></a> 
+                <img src="photos/icons/minus-horizontal-straight-line.svg" id="line" class="icon">
+                <button type="button"><img src="photos/icons/profile.svg" class="icon"></button>
+                <img src="photos/icons/check.svg" class="smallIconCheck">
+                <button type="button"><img src="photos/icons/fav.svg" class="icon"></button>
+                <img src="photos/icons/circle.svg" class="smallIconCircle">
+                <button type="button"><img src="photos/icons/shopping-bag.svg" class="icon"></button>
+                <img src="photos/icons/products.svg" class="smallIconCircle">
+            </div>
+        </div>
+    </div>
+    <img src="photos/icons/solid-arrow-down.svg" id="solidArrow">
+    <div class="white-line flex h-between mb-0 text-gray plr-1col">
+        <nav class="menu-categories capitalize">
+            <ul class="subactive">
+                <li><a href="#">Ново</a></li>
+                <li><a href="#">Облекло</a></li>
+                <li><a href="#">Обувки</a></li>
+                <li><a href="#">Аксесоари</a></li>
+                <li><a href="#" id="sale">Sale</a></li>
+                <li><a href="#">Марки</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form id="form"> 
+              <input type="search" placeholder="Търси...">
+              <button><img src="photos/icons/search.svg"></button>
+            </form>        
+        </div>
+        
+    </div>
+    <div class="delivery m-0 bgr-red text-white ">
+        <h3><span>Безплатна доставка</span> за поръчки над 150 лв. с промо-код: <span>delivery</span></h3>
+    </div>
+    <div class="blueBanner flex-col h-center v-center text-center text-white uppercase">
+            <h5>Нова колекция мъже</h5>
+            <h3 class="zoom">Пролет &#8725; лято <strong>#urban2020</strong> </h3>
+    </div>
+    
+    <!-- END header -->
+    
+    <!-- START banner with 100% height -->
+    <div class="banner100 mlr-1col mt-2 mb-2">
+        <div class="flex flex-col h-center v-center text-center text-white m-0 full-height  overlay-gray">
+            <h3 class="lowercase">#urban comfort</h3>
+            <h1 class="boldText"><strong>Нова колекция анцузи</strong></h1>
+            <button type="button" class="uppercase" >Пазарувай сега</button>
+        </div>
+    </div>
+    <!-- END banner with 100% height -->
+    <!-- START banner with 6 elements -->
+    <div class="bannerCategories flex flex-row mlr-1col mt-2">
+        <div class="flex flex-col col-lg-2 col-md-2 col-sm-6 col-xs-12 text-white mt-1 pr-2 h-center v-center text-center zoom">
+            <a href="#" class="overlay-gray"><img src="photos/banner_1/jackets.png" alt="Якета" title="Якета"></a>
+            <a href="#" id="name">Якета</a>
+        </div>
+        <div class="flex flex-col col-lg-2 col-md-2 col-sm-6 col-xs-12 text-white mt-1 pr-2 h-center v-center text-center zoom">
+            <a href="#" class="overlay-gray"><img src="photos/banner_1/t-shirts.png" alt="Тениски" title="Тениски"></a>
+            <a href="#" id="name">Тениски</a>
+        </div>
+        <div class="flex flex-col col-lg-2 col-md-2 col-sm-6 col-xs-12 text-white mt-1 pr-2 h-center v-center text-center zoom">
+            <a href="#" class="overlay-gray"><img src="photos/banner_1/sweetshirts.png" alt="Суичъри" title="Суичъри"></a>
+            <a href="#" id="name">Суичъри</a>
+        </div>
+        <div class="flex flex-col col-lg-2 col-md-2 col-sm-6 col-xs-12 text-white mt-1 pr-2 h-center v-center text-center zoom">
+            <a href="#" class="overlay-gray"><img src="photos/banner_1/tracksuits.png" alt="Анцузи" title="Анцузи"></a>
+            <a href="#" id="name">Анцузи</a>
+        </div>
+        <div class="flex flex-col col-lg-2 col-md-2 col-sm-6 col-xs-12 text-white mt-1 pr-2 h-center v-center text-center zoom">
+            <a href="#" class="overlay-gray"><img src="photos/banner_1/shorts.png" alt="Долнища" title="Долнища"></a>
+            <a href="#" id="name">Долнища</a>
+        </div>
+        <div class="flex flex-col col-lg-2 col-md-2 col-sm-6 col-xs-12 text-white mt-1 pr-2 h-center v-center text-center zoom">
+            <a href="#" class="overlay-gray"><img src="photos/banner_1/accessories.png" alt="Аксесоари" title="Аксесоари"></a>
+            <a href="#" id="name">Аксесоари</a>
+        </div>
+    </div>
+    <!-- END banner with 6 elements -->
+        
+    <!-- START banner with 3 elements -->
+    <div class="banner1-3 flex h-around mt-2 mlr-1col text-gray">
+        <div class="three-lg three-md two-sm one-xs bgr-white text-center  pr-1 pl-1">
+            <a href="#"><img alt="Шапки" title="Шапки" src="photos/banner_2/hats.png" class="overlay-gray"></a>
+            <h1 class="flexFit uppercase bgr-black text-white boldText letterSpace">flex fit</h1>
+            <div id="transform">
+                <a href="#">Шапки FLEXFIT</a>
+                <h5>Най-търсени за сезона</h5>
+                <button type="button" class="btn-shop uppercase">Пазарувай сега</button>
+            </div>
+        </div>
+        <div class="three-lg three-md two-sm one-xs bgr-white text-center pr-1 pl-1">
+            <a href="#"><img alt="Кожени якета" title="Кожени якета" src="photos/banner_2/leather-jackets.png" class="crop overlay-gray"></a>
+            <h1 class="urbanStyle uppercase bgr-black text-white boldText letterSpace">urban style</h1>
+            <div id="transform">
+                <a href="#">Кожени якета</a>
+                <h5>Най-търсени за сезона</h5>
+                <button type="button" class="btn-shop uppercase">Пазарувай сега</button>
+            </div>
+        </div>
+        <div class="three-lg three-md two-sm one-xs bgr-white text-center pr-1 pl-1">
+            <a href="#"><img alt="Ризи" title="Ризи" src="photos/banner_2/shirts.png" ></a>
+            <h1 class="urbanStyleSecond uppercase bgr-black text-white boldText letterSpace">urban style</h1>
+            <div id="transform">
+                <a href="#">Ризи</a>
+                <h5>Най-търсени за сезона</h5>
+                <button type="button" class="btn-shop uppercase">Пазарувай сега</button>
+            </div>
+        </div>
+    </div>
+    <!-- END banner with 3 elements -->
+        
+    <!-- START banner with 4 elements -->
+    <div class="banner1-4 flex flex-row mlr-1col mb-0 p-0">
+        <div class="flex flex-col col-lg-3 col-md-3 col-sm-6 col-xs-12 text-white p-1 text-center zoom">
+            <a href="#"><img src="photos/banner_3/first-img.png"></a>
+            <div class="transform1-4">
+                <h4>Примерно заглавие</h4>
+                <a href="#">Вижте колекцията ></a>
+            </div>
+        </div>
+        <div class="flex flex-col col-lg-3 col-md-3 col-sm-6 col-xs-12 text-white p-1 text-center zoom">
+            <a href="#"><img src="photos/banner_3/second-img.png"></a>
+            <div class="transform1-4">
+                <h4>Примерно заглавие</h4>
+                <a href="#">Пазарувай анцузи ></a>
+            </div>
+        </div>
+        <div class="flex flex-col col-lg-3 col-md-3 col-sm-6 col-xs-12 text-white p-1 text-center zoom">
+            <a href="#"><img src="photos/banner_3/third-img.png"></a>
+            <div class="transform1-4">
+                <h4>Примерно заглавие</h4>
+                <a href="#">Към категорията ></a>
+            </div>
+        </div>
+        <div class="flex flex-col col-lg-3 col-md-3 col-sm-6 col-xs-12 text-white p-1 text-center zoom">
+            <a href="#"><img src="photos/banner_3/fourth-img.png"></a>
+            <div class="transform1-4">
+                <h4>Примерно заглавие</h4>
+                <a href="#">Вижте колекцията ></a>
+            </div>
+        </div>
+    </div>  
+    <!-- END banner with 4 elements -->
+    
+    <!-- START banner with slider -->
+        <div class="bannerSlider mlr-1col flex-col h-center v-center text-center text-darkGray">
+            <div class="newProducts flex v-center h-center text-center mb-2 text-darkGray">
+                Нови продукти от<span>illmatic</span>
+            </div> 
+            <div class="responsive text-white">
+                <div class="item"> 
+                    <a href="#"><img src="photos/slider/image-first.png" class="p-1"></a>
+                    <p class="bgr-red percent">-23%</p>
+                    <p class="uppercase bgr-darkGray new">ново</p>
+                    <button class="dot-with-2-banners" onclick="fillHeart('heart')"><img src="photos/icons/solid-fav.svg" class="icon" id="heart"></button>
+                    <div class="text-2-banners">
+                        <h4 class="uppercase text-darkGray">illmatic</h4>
+                        <a href="#"><h5 class="uppercase">Черна тениска с лого</h5></a>
+                        <div class="price-2-banners flex flex-row p-0 h-center v-center">
+                            <h5>45,00 лв.</h5>
+                            <hr />
+                            <h5 class="promo">34,00 лв.</h5>
+                        </div>            
+                        <a href="#"><h5  style="transform: translate(0, -40px);">+ 4 цвята</h5></a>
+                    </div>  
+                </div>
+                
+                <div class="item">
+                    <a href="#"><img src="photos/slider/image-second.png" class="p-1"></a>
+                    <button class="dot-without-banner" onclick="fillHeart('heart1')"><img src="photos/icons/dark-fav.svg" class="icon" id="heart1"></button>
+                    <div class="text">
+                        <h4 class="uppercase text-darkGray">illmatic</h4>
+                        <a href="#"><h5 class="uppercase">Черна тениска с лого</h5></a>
+                        <div class="price flex flex-row p-0 h-center v-center">
+                            <h5>45,00 лв.</h5>
+                        </div>            
+                        <a href="#"><h5  style="transform: translate(0, -40px);">+ 2 цвята</h5></a>
+                    </div>  
+                </div>
+                
+                <div class="item">
+                    <a href="#"><img src="photos/slider/image-third.png" class="p-1"></a>
+                    <p class="bgr-red percent">-23%</p>
+                    <button class="dot-with-1-banner" onclick="fillHeart('heart2')"><img src="photos/icons/dark-fav.svg" class="icon" id="heart2"></button>
+                    <div class="text-1-banner">
+                        <h4 class="uppercase text-darkGray">illmatic</h4>
+                        <a href="#"><h5 class="uppercase">Бяла тениска с лого</h5></a>
+                        <div class="price-2-banners flex flex-row p-0 h-center v-center">
+                            <h5>45,00 лв.</h5>
+                            <hr />
+                            <h5 class="promo">34,00 лв.</h5>
+                        </div>            
+                        <a href="#"><h5  style="transform: translate(0, -40px);">+ 7 цвята</h5></a>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <a href="#"><img src="photos/slider/image-second.png" class="p-1"></a>
+                    <button class="dot-without-banner" onclick="fillHeart('heart3')"><img src="photos/icons/dark-fav.svg" class="icon" id="heart3">
+                    </button>
+                    <div class="text">
+                        <h4 class="uppercase text-darkGray">illmatic</h4>
+                        <a href="#"><h5 class="uppercase">Черна тениска с лого</h5></a>
+                        <div class="price flex flex-row p-0 h-center v-center">
+                            <h5>45,00 лв.</h5>
+                        </div>            
+                        <a href="#"><h5  style="transform: translate(0, -40px);">+ 2 цвята</h5></a>
+                    </div> 
+                </div>
+                
+                <div class="item">
+                    <a href="#"><img src="photos/slider/image-fifth.png" class="p-1"></a>
+                    <p class="uppercase bgr-darkGray new">ново</p>
+                    <button class="dot-with-1-banner" onclick="fillHeart('heart4')"><img src="photos/icons/dark-fav.svg" class="icon" id="heart4">
+                    </button>
+                    <div class="text-1-banner">
+                        <h4 class="uppercase text-darkGray">illmatic</h4>
+                        <a href="#"><h5 class="uppercase">Черна тениска с лого</h5></a>
+                        <div class="price flex flex-row p-0 h-center v-center">
+                            <h5>45,00 лв.</h5>
+                        </div>            
+                        <a href="#"><h5  style="transform: translate(0, -40px);">+ 15 цвята</h5></a>
+                    </div> 
+                </div>
+                
+                <div class="item">
+                    <a href="#"><img src="photos/slider/image-third.png" class="p-1"></a>
+                    <p class="bgr-red percent">-23%</p>
+                    <button class="dot-with-1-banner" onclick="fillHeart('heart5')"><img src="photos/icons/dark-fav.svg" class="icon" id="heart5"></button>
+                    <div class="text-1-banner">
+                        <h4 class="uppercase text-darkGray">illmatic</h4>
+                        <a href="#"><h5 class="uppercase">Бяла тениска с лого</h5></a>
+                        <div class="price-2-banners flex flex-row p-0 h-center v-center">
+                            <h5>45,00 лв.</h5>
+                            <hr />
+                            <h5 class="promo">34,00 лв.</h5>
+                        </div>            
+                        <a href="#"><h5  style="transform: translate(0, -40px);">+ 7 цвята</h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- END banner with slider -->
+    
+    <!-- START banner with 2 elements -->
+    
+        <div class="banner1-2 flex flex-col h-center v-center text-center mlr-1col">
+            <h4>Градски стил от <span>hands of gold</span></h4>
+            <div class="flex flex-row mb-0 p-0">
+                <div class="flex flex-col col-lg-6 col-md-6 col-sm-12 col-xs-12 text-white p-1 text-center zoom">
+                    <a href="#"><img src="photos/banner_4/first.png" class="overlay-black"></a>
+                    <div class="transform1-4">
+                        <h5 class="lowercase">#urban comfort</h5>
+                        <h4><strong>Нова колекция анцузи</strong></h4>
+                        <button type="button" class="uppercase bgr-white text-gray p-1">Пазарувай сега</button>
+                    </div>
+                </div>
+                <div class="flex flex-col col-lg-6 col-md-6 col-sm-12 col-xs-12 text-white p-1 text-center zoom">
+                    <a href="#"><img src="photos/banner_4/second.png" class="overlay-black"></a>
+                    <div class="transform1-4">
+                        <h4 class="capitalize">Hands of gold</h4>
+                        <a href="#">Пазарувай суичъри ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- END banner with 2 elements -->
+    
+    <!-- START banner with text -->
+    
+        <div class="bannerText flex flex-col mlr-1col mb-0 text-gray">
+            <h2>Мъжки дрехи и аксесори от онлайн магазин <span>fashion</span></h2>
+            <p>Lorem ipsum е един от най-често използваните в печатарството и графичния дизайн заготовъчни текстове [1], служещи да запълват със съдържание онези графични елементи на документ или графична презентация, които трябва да бъдат представени със собствен шрифт, типография, запълвайки ги със стандартен,<a href="#">неотвличащ вниманието</a> (незначещ) текст.</p>
+            <p>Текстът <a href="#">Lorem ipsum</a> е безсмислен, защото е (непълно) извлечен от пасаж на Цицерон, и затова визуално много прилича на истински – заради разпределението и честотата на срещане на по-къси, средни и дълги думи, разпределението на интервалите и препинателните знаци, както и дължината на изреченията. Разнообразието му осигурява, че ако се случи да бъде размножен, за да изпълни предвиденото пространство, да не се получат шарки от сорта на моарето вследствие еднотипно <span id="dotsCon">...</span><span id="more">редуване на думи и  интервали. „Налят“ по този начин в графичните блокове, Lorem ipsum позволява на окото да се абстрахира от конкретиката на смисления текст, и да се съсредоточи само върху особеностите на използвания шрифт и неговото визуално въздействие върху читателя.</span></p>
+            <button onclick="readMoreFunction()" id="readMore">Виж повече ></button>
+        </div>
+    
+    <!-- END banner with text -->
+        
+    <!-- START Footer -->
+    
+        <div class="footer text-gray">
+            <hr class="line" />
+            <div class="flex flex-row  mlr-1col v-center uppercase">
+                    <div class="flex flex-row v-center col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                        <h2 class="text-darkGray">Fashion</h2>
+                    </div>
+                <div class="flex flex-row v-center col-lg-3 col-md-8 col-sm-8 col-xs-12">
+                    <h5>Последвайте ни: </h5>
+                    <a href="#" title="Facebook"><img src="photos/icons/facebook.svg" class="social"></a>
+                    <a href="#" title="Instagram"><img src="photos/icons/instagram.svg" class="social" style="margin-right: 10px;"></a>
+                    <a href="#" title="YouTube"><img src="photos/icons/you-tube.svg" class="social"></a>
+                    <img src="photos/icons/lite-line.svg" class="icon">
+                </div>
+                <div class="flex flex-row v-center col-lg-5 col-md-8 col-sm-10 col-xs-12">
+                    <h5>Начини на плащане: </h5>
+                    <a href="#" title="PayPal"><img src="photos/icons/pay-pal.png" class="pay" style="width: 70px; height: 40px; margin: 5px;"></a>
+                    <a href="#" title="Visa"><img src="photos/icons/visa.svg" class="pay"></a>
+                    <a href="#" title="Maestro"><img src="photos/icons/maestro.svg" class="pay"></a>
+                    <a href="#" title="Mastercard" ><img src="photos/icons/mastercard.svg" class="pay"></a>
+                    <a href="#" title="Наложен платеж" id="cash">Наложен платеж</a>
+                    <img src="photos/icons/lite-line.svg" class="icon">
+                </div>
+                <div class="flex flex-row v-center col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                    <h5>Доставяме чрез: </h5>
+                    <a href="#" title="Speedy"><img src="photos/icons/speedy.svg" class="pay" style="height: 60px; width: 80px; margin: 10px;"></a>
+                </div> 
+            </div>
+            <hr class="line" />
+            <div class="flex h-between mlr-1col v-stretch v-center">
+                <div class="link flex flex-col col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="text-darkGray">Полезни връзки </h4>
+                    <a href="#">Доставка и плащане</a>
+                    <a href="#">Връщане и замяна</a>
+                    <a href="#">Често задавани въпроси</a>
+                    <a href="#">Онлайн решаване на спорове</a>
+                    <a href="#">Таблица с размери</a>
+                </div>
+                <div class="link flex flex-col col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="text-darkGray">За <span>fashion</span></h4>
+                    <a href="#">За онлайн магазин <span>fashion</span></a>
+                    <a href="#">Общи условия</a>
+                    <a href="#">Политика за поверителност</a>
+                    <a href="#">Контакти</a>
+                </div>
+                <div class="link flex flex-col col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <h4 class="text-darkGray">Свържете се с нас</h4>
+                    <a href="#">Тел. +359 222 666 777</a>
+                    <p>(Пн.-Пт. 9 - 17 ч.)</p>
+                    <a href="#">Пишете ни</a>
+                </div>
+                <div class="link flex flex-col col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <p>Абонирай се за нашия онлайн бюлети и вземи <span style="letter-spacing: 0.1em;"><strong>10 лв. отстъпка</strong></span> на първа поръчка*</p>
+                    <button>абонирай се </button>
+                    <img src="photos/icons/e-mail.svg" id="e-mail">
+                    <a href="#" class="see-more">Виж повече за кампанията<img src="photos/icons/arrow-gray-right.svg"></a> 
+                </div>
+            </div>
+            <hr class="line" />
+            <div class="flex h-between mlr-1col pt-1 pb-1">
+                <div class="flex flex-row">
+                    &copy; 2020-2021 <span>FASHION</span>  
+                    <img src="photos/icons/lite-line.svg" class="icon">
+                    Онлайн магазин за мъжки и дамски дрехи и обувки.
+                </div>
+                <div class="flex flex-row">
+                    <img src="photos/icons/logo.svg" id="logo">
+                    Онлайн магазин от <strong style="padding-left: 4px;">Stenik</strong>
+                </div>
+            </div>
+        </div>
+    <!-- END Footer -->
+    
+    <!-- JS files-->
+    
+    <script src="js/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquerymenu.js"></script>
+    <script src="js/jquerysubmenu.js"></script>
+    <script src="js/FlowTypeJS/flowtype.js"></script>
+    
+    <!-- Change slider -->
+    <script>   
+    $('.responsive').slick({
+      dots: true,
+      prevArrow:"<img class='a-left control-c prev slick-prev' src='photos/icons/next-arrow.svg' style='transform: translate(120%, -600%) rotate(180deg); height: 30px; width:30px; z-index:50'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='photos/icons/next-arrow.svg' style='transform: translate(-100%, -600%); height: 30px; width:30px'>",
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      speed: 2000,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      pauseOnHover: false,
+        pauseOnFocus: false,
+      pauseOnDotsHover: false,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+          }
+        }
+      ]
+    });
+    </script>
+
+</body>
+</html>
