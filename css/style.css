@@ -179,15 +179,17 @@ input {
 
 .search-container button {
     background-color: var(--white);
-    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    padding: 2px;
     border: none;
     border: none;
     cursor: pointer;
-}
-
-.search-container button img {
-    height: 20px;
-    width: 20px;
+    background-image: url(../photos/icons/search.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .blueBanner {
@@ -304,9 +306,9 @@ input {
     margin: 0;
     position: absolute;
     font-size: 1.1em;
-    top: 12px;
+    top: 9px;
     width: auto;
-    right: 33.5%;
+    right: 17%;
     margin: 0;
     background-color: var(--darkGray);
     z-index: 150;
@@ -392,7 +394,7 @@ button {
     font-weight: 900;
 }
 
-#name {
+.name {
     font-weight: 500;
     transform: translate(0%, -140%);
 }
@@ -451,7 +453,7 @@ button {
     cursor: pointer;
 }
 
-#transform {
+.transform {
     transform: translate(0%, -45%);
 }
 
@@ -514,7 +516,7 @@ button {
     width: 25%;
     padding: 2px 1px;
     margin: 10px;
-    transform: translate(191px, -350px);
+    transform: translate(171px, -350px);
 
 }
 
@@ -647,12 +649,12 @@ price hr {
 
 /* footer */
 
-.footer {
+footer {
     font-size: 90%;
     transform: translate(0, -150px);
 }
 
-.footer h2 {
+footer h2 {
     color: var(--darkGray);
     letter-spacing: 0.1em;
     text-shadow:
@@ -885,8 +887,6 @@ price hr {
     #line {
         display: none;
     }
-
-
 
     #fashion {
         padding-top: 5px;
